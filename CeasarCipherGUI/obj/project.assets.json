@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\thorn\\source\\repos\\CeasarCipherGUI\\CeasarCipherGUI.csproj",
+      "projectUniqueName": "D:\\Dev\\CaesarCipher\\CeasarCipherGUI\\CeasarCipherGUI.csproj",
       "projectName": "CeasarCipherGUI",
-      "projectPath": "C:\\Users\\thorn\\source\\repos\\CeasarCipherGUI\\CeasarCipherGUI.csproj",
+      "projectPath": "D:\\Dev\\CaesarCipher\\CeasarCipherGUI\\CeasarCipherGUI.csproj",
       "packagesPath": "C:\\Users\\thorn\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\thorn\\source\\repos\\CeasarCipherGUI\\obj\\",
+      "outputPath": "D:\\Dev\\CaesarCipher\\CeasarCipherGUI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
