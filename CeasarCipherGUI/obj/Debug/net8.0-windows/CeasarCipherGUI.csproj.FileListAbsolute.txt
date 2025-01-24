@@ -1,0 +1,16 @@
+C:\Users\thorn\source\repos\CeasarCipherGUI\bin\Debug\net8.0-windows\CeasarCipherGUI.exe
+C:\Users\thorn\source\repos\CeasarCipherGUI\bin\Debug\net8.0-windows\CeasarCipherGUI.deps.json
+C:\Users\thorn\source\repos\CeasarCipherGUI\bin\Debug\net8.0-windows\CeasarCipherGUI.runtimeconfig.json
+C:\Users\thorn\source\repos\CeasarCipherGUI\bin\Debug\net8.0-windows\CeasarCipherGUI.dll
+C:\Users\thorn\source\repos\CeasarCipherGUI\bin\Debug\net8.0-windows\CeasarCipherGUI.pdb
+C:\Users\thorn\source\repos\CeasarCipherGUI\obj\Debug\net8.0-windows\CeasarCipherGUI.CaesarCipherForm.resources
+C:\Users\thorn\source\repos\CeasarCipherGUI\obj\Debug\net8.0-windows\CeasarCipherGUI.csproj.GenerateResource.cache
+C:\Users\thorn\source\repos\CeasarCipherGUI\obj\Debug\net8.0-windows\CeasarCipherGUI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\thorn\source\repos\CeasarCipherGUI\obj\Debug\net8.0-windows\CeasarCipherGUI.AssemblyInfoInputs.cache
+C:\Users\thorn\source\repos\CeasarCipherGUI\obj\Debug\net8.0-windows\CeasarCipherGUI.AssemblyInfo.cs
+C:\Users\thorn\source\repos\CeasarCipherGUI\obj\Debug\net8.0-windows\CeasarCipherGUI.csproj.CoreCompileInputs.cache
+C:\Users\thorn\source\repos\CeasarCipherGUI\obj\Debug\net8.0-windows\CeasarCipherGUI.dll
+C:\Users\thorn\source\repos\CeasarCipherGUI\obj\Debug\net8.0-windows\refint\CeasarCipherGUI.dll
+C:\Users\thorn\source\repos\CeasarCipherGUI\obj\Debug\net8.0-windows\CeasarCipherGUI.pdb
+C:\Users\thorn\source\repos\CeasarCipherGUI\obj\Debug\net8.0-windows\CeasarCipherGUI.genruntimeconfig.cache
+C:\Users\thorn\source\repos\CeasarCipherGUI\obj\Debug\net8.0-windows\ref\CeasarCipherGUI.dll
