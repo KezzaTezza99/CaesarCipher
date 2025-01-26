@@ -15,6 +15,20 @@ namespace CeasarCipherGUI
         public EncryptTextForm()
         {
             InitializeComponent();
+            etfEncryptedTextOutput.Visible = false;
+        }
+
+        private void EncryptText(object sender, EventArgs e)
+        {
+            // Display the encrypted text field area
+            etfEncryptedTextOutput.Visible = true;
+
+            // Create the cipher object and pass in the plain text and the users key choice
+            CaesarCipher caesarCipher = new CaesarCipher(etfPlainTextInput.Text);
+            caesarCipher.SetCipherKey((int)etfCipherKey.Value);
+            
+            // Encrypt the text and display the output in the text area field
+            etfEncryptedTextOutput.Text = caesarCipher.EncryptText();
         }
     }
 }
