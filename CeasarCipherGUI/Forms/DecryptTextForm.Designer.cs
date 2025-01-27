@@ -106,6 +106,7 @@
             dtfUsersCustomKey.Size = new Size(120, 23);
             dtfUsersCustomKey.TabIndex = 7;
             dtfUsersCustomKey.Value = new decimal(new int[] { 1, 0, 0, 0 });
+            dtfUsersCustomKey.ValueChanged += UpdateSuggestedKeyValue;
             // 
             // dtfKeyValueLabel
             // 

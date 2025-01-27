@@ -157,7 +157,7 @@ namespace CeasarCipherGUI
         }
 
         //TODO: CODE IS NOT DRY
-        private string PartialDecipher()
+        public string PartialDecipher()
         {
             int i;
             string output = String.Empty;
@@ -199,5 +199,11 @@ namespace CeasarCipherGUI
         public int GetSuggestedCipherKey() { return m_suggestedKey; }
         public string GetSuggestedDecipheredWord() { return m_suggestedDecipherText; }
         public void SetKeyToBeSuggestedKey() { m_key = m_suggestedKey; }
+        public void SetSuggestedKeyToUserDecidedKey(int _userDecidedKey) 
+        {
+            m_suggestedKey = _userDecidedKey;
+            RecipherPartialTextBasedOnUserSuggestion();
+        }
+        private void RecipherPartialTextBasedOnUserSuggestion() { m_suggestedDecipherText = PartialDecipher(); }
     } //!CaesarCipher
 } //!CeasarCipherGUI

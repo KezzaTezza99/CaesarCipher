@@ -48,7 +48,7 @@ namespace CeasarCipherGUI.Forms
         private void AnalysisTextForKey(object sender, EventArgs e)
         {
             // Now actually get the analysis key value
-            caesarCipher.SetInputText(dtfPlainTextOutput.Text);
+            caesarCipher.SetInputText(dtfEncryptedTextInput.Text);
             caesarCipher.AnalysisOfText();
 
             // Hide the button as we don't need to generate the key anymore
@@ -82,10 +82,21 @@ namespace CeasarCipherGUI.Forms
             dtfResetButton.Visible = true;
 
             // Set the key to be suggested key / or the user chosen key and then finish decrypting the text
-            caesarCipher.SetInputText(dtfPlainTextOutput.Text);
-            caesarCipher.AnalysisOfText();
-            caesarCipher.SetKeyToBeSuggestedKey();
-            dtfPlainTextOutput.Text = caesarCipher.DecryptText();
+            caesarCipher.SetInputText(dtfEncryptedTextInput.Text);
+
+            // If the custom key isn't checked we just do this otherwise we need to ensure the key is changed!
+            if (!dtfCustomKeyCheckbox.Checked)
+            {
+                caesarCipher.AnalysisOfText();
+                caesarCipher.SetKeyToBeSuggestedKey();
+                dtfPlainTextOutput.Text = caesarCipher.DecryptText();
+            }
+            else
+            {
+                caesarCipher.SetSuggestedKeyToUserDecidedKey((int)dtfUsersCustomKey.Value);
+                caesarCipher.SetKeyToBeSuggestedKey();
+                dtfPlainTextOutput.Text = caesarCipher.DecryptText();
+            }
         }
 
         // Reset everything to allow the user to try again if needed
@@ -109,6 +120,13 @@ namespace CeasarCipherGUI.Forms
         private void GoToHomePage(object sender, EventArgs e)
         {
             NavigationHelper.NavigateHome(this);
+        }
+
+        private void UpdateSuggestedKeyValue(object sender, EventArgs e)
+        {
+            // User has chosen to use a custom key value so lets update the key and deciphered word!
+            caesarCipher.SetSuggestedKeyToUserDecidedKey((int)dtfUsersCustomKey.Value);
+            dtfDecryptedWordGuessValue.Text = caesarCipher.GetSuggestedDecipheredWord();
         }
     }
 }
