@@ -64,6 +64,7 @@
             dtfEncryptedTextInput.Size = new Size(776, 84);
             dtfEncryptedTextInput.TabIndex = 2;
             dtfEncryptedTextInput.Text = "";
+            dtfEncryptedTextInput.TextChanged += ShowOrHideGenerateKey;
             // 
             // dtfGetSuggestedKey
             // 

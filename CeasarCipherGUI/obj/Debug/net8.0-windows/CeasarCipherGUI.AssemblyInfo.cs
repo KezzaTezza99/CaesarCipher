@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CeasarCipherGUI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a906d3ea475b03db785374176745435033b3bf7d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c426b191bf6a27fe7ba447a7cbada8774d56adf3")]
 [assembly: System.Reflection.AssemblyProductAttribute("CeasarCipherGUI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CeasarCipherGUI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

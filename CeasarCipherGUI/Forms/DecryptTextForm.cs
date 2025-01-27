@@ -24,6 +24,8 @@ namespace CeasarCipherGUI.Forms
         private void HideNonDefaultFields()
         {
             // Hiding some stuff by default until the user needs it
+            dtfKeyLabel.Visible = false;
+            dtfGetSuggestedKey.Visible = false;
             dtfCustomKeyCheckbox.Visible = false;
             dtfUsersCustomKey.Visible = false;
             dtfKeyValueLabel.Visible = false;
@@ -113,8 +115,26 @@ namespace CeasarCipherGUI.Forms
         {
             // If the box is checked show the custom key field otherwise don't
             if (dtfCustomKeyCheckbox.Checked)
+            {
                 dtfUsersCustomKey.Visible = true;
-            else dtfUsersCustomKey.Visible = false;
+
+                // We should also update the suggested key to now be 1! 
+                caesarCipher.SetSuggestedKeyToUserDecidedKey((int)dtfUsersCustomKey.Value);
+                dtfKeyValue.Text = caesarCipher.GetSuggestedCipherKey().ToString();
+                dtfDecryptedWordGuessValue.Text = caesarCipher.GetSuggestedDecipheredWord();
+            }
+            else
+            {
+                dtfUsersCustomKey.Visible = false;
+
+                // Reset the numeric value to 1 incase the user had changed this
+                dtfUsersCustomKey.Value = 1;
+
+                // Reset the suggested key to be the analysis suggested key
+                caesarCipher.AnalysisOfText();
+                dtfKeyValue.Text = caesarCipher.GetSuggestedCipherKey().ToString();
+                dtfDecryptedWordGuessValue.Text = caesarCipher.GetSuggestedDecipheredWord();
+            }
         }
 
         private void GoToHomePage(object sender, EventArgs e)
@@ -127,6 +147,22 @@ namespace CeasarCipherGUI.Forms
             // User has chosen to use a custom key value so lets update the key and deciphered word!
             caesarCipher.SetSuggestedKeyToUserDecidedKey((int)dtfUsersCustomKey.Value);
             dtfDecryptedWordGuessValue.Text = caesarCipher.GetSuggestedDecipheredWord();
+        }
+
+        private void ShowOrHideGenerateKey(object sender, EventArgs e)
+        {
+            // Instead of error handling the input text being empty, just don't allow them to generate a cipher
+            // untill a value is in the input field
+            if (string.IsNullOrWhiteSpace(dtfEncryptedTextInput.Text))
+            {
+                dtfGetSuggestedKey.Visible = false;
+                dtfKeyLabel.Visible = false;
+            }
+            else
+            {
+                dtfGetSuggestedKey.Visible = true;
+                dtfKeyLabel.Visible = true;
+            }
         }
     }
 }
