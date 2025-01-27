@@ -13,6 +13,8 @@ namespace CeasarCipherGUI.Forms
 {
     public partial class DecryptTextForm : Form
     {
+        CaesarCipher caesarCipher = new CaesarCipher();
+
         public DecryptTextForm()
         {
             InitializeComponent();
@@ -46,8 +48,7 @@ namespace CeasarCipherGUI.Forms
         private void AnalysisTextForKey(object sender, EventArgs e)
         {
             // Now actually get the analysis key value
-            //TODO: NOT DRY CODE WE REPEAT 
-            CaesarCipher caesarCipher = new CaesarCipher(dtfEncryptedTextInput.Text);
+            caesarCipher.SetInputText(dtfPlainTextOutput.Text);
             caesarCipher.AnalysisOfText();
 
             // Hide the button as we don't need to generate the key anymore
@@ -81,7 +82,7 @@ namespace CeasarCipherGUI.Forms
             dtfResetButton.Visible = true;
 
             // Set the key to be suggested key / or the user chosen key and then finish decrypting the text
-            CaesarCipher caesarCipher = new CaesarCipher(dtfEncryptedTextInput.Text);
+            caesarCipher.SetInputText(dtfPlainTextOutput.Text);
             caesarCipher.AnalysisOfText();
             caesarCipher.SetKeyToBeSuggestedKey();
             dtfPlainTextOutput.Text = caesarCipher.DecryptText();

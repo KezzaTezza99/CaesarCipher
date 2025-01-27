@@ -17,7 +17,7 @@ namespace CeasarCipherGUI
         protected int m_key;
         int[] m_alphabetCount = new int[26];
        
-        public CaesarCipher(string _inputText)
+        public void SetInputText(string _inputText)
         {
             m_inputText = _inputText;
         }
