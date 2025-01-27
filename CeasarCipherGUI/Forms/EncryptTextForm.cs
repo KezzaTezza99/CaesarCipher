@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CeasarCipherGUI.Utility;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -38,13 +39,7 @@ namespace CeasarCipherGUI
 
         private void GoToHomePage(object sender, EventArgs e)
         {
-            CaesarCipherForm caesarCipherForm = new CaesarCipherForm();
-
-            // Ensuring that we can exit the application from EncryptFileForm!
-            caesarCipherForm.FormClosed += (s, args) => Application.Exit();
-
-            this.Hide();                                    // Hiding the current form (Encrypt Text Form)
-            caesarCipherForm.Show();                        // Showing the Home Page
+            NavigationHelper.NavigateHome(this);
         }
     }
 }

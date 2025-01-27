@@ -68,9 +68,11 @@
             // etfCipherKey
             // 
             etfCipherKey.Location = new Point(12, 140);
+            etfCipherKey.Minimum = new decimal(new int[] { 1, 0, 0, 0 });
             etfCipherKey.Name = "etfCipherKey";
             etfCipherKey.Size = new Size(120, 23);
             etfCipherKey.TabIndex = 5;
+            etfCipherKey.Value = new decimal(new int[] { 1, 0, 0, 0 });
             // 
             // etfEncryptButton
             // 

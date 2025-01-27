@@ -42,6 +42,7 @@
             dtfPlainTextOutput = new RichTextBox();
             dtfResetButton = new Button();
             dtfHome = new Button();
+            dtfNoteLabel = new Label();
             ((System.ComponentModel.ISupportInitialize)dtfUsersCustomKey).BeginInit();
             SuspendLayout();
             // 
@@ -89,16 +90,17 @@
             // 
             dtfCustomKeyCheckbox.AutoSize = true;
             dtfCustomKeyCheckbox.ForeColor = Color.White;
-            dtfCustomKeyCheckbox.Location = new Point(668, 120);
+            dtfCustomKeyCheckbox.Location = new Point(668, 125);
             dtfCustomKeyCheckbox.Name = "dtfCustomKeyCheckbox";
             dtfCustomKeyCheckbox.Size = new Size(124, 19);
             dtfCustomKeyCheckbox.TabIndex = 6;
             dtfCustomKeyCheckbox.Text = "Use your own key?";
             dtfCustomKeyCheckbox.UseVisualStyleBackColor = true;
+            dtfCustomKeyCheckbox.Click += UseCustomKey;
             // 
             // dtfUsersCustomKey
             // 
-            dtfUsersCustomKey.Location = new Point(668, 145);
+            dtfUsersCustomKey.Location = new Point(668, 151);
             dtfUsersCustomKey.Minimum = new decimal(new int[] { 1, 0, 0, 0 });
             dtfUsersCustomKey.Name = "dtfUsersCustomKey";
             dtfUsersCustomKey.Size = new Size(120, 23);
@@ -183,6 +185,18 @@
             dtfHome.TabIndex = 15;
             dtfHome.Text = "Home";
             dtfHome.UseVisualStyleBackColor = true;
+            dtfHome.Click += GoToHomePage;
+            // 
+            // dtfNoteLabel
+            // 
+            dtfNoteLabel.AutoSize = true;
+            dtfNoteLabel.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            dtfNoteLabel.ForeColor = Color.White;
+            dtfNoteLabel.Location = new Point(16, 423);
+            dtfNoteLabel.Name = "dtfNoteLabel";
+            dtfNoteLabel.Size = new Size(525, 34);
+            dtfNoteLabel.TabIndex = 16;
+            dtfNoteLabel.Text = "Key suggestion is based on common occurances of letters and may not be accurate.\r\nSometimes the suggested decrypted word will be gibberish, try using your own key!";
             // 
             // DecryptTextForm
             // 
@@ -190,6 +204,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ControlText;
             ClientSize = new Size(804, 477);
+            Controls.Add(dtfNoteLabel);
             Controls.Add(dtfHome);
             Controls.Add(dtfResetButton);
             Controls.Add(dtfPlainTextOutput);
@@ -229,5 +244,6 @@
         private RichTextBox dtfPlainTextOutput;
         private Button dtfResetButton;
         private Button dtfHome;
+        private Label dtfNoteLabel;
     }
 }

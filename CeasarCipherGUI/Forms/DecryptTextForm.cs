@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CeasarCipherGUI.Utility;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -30,6 +31,7 @@ namespace CeasarCipherGUI.Forms
             dtfContinueDecryptionButton.Visible = false;
             dtfPlainTextOutput.Visible = false;
             dtfResetButton.Visible = false;
+            dtfNoteLabel.Visible = false;
         }
 
         private void ShowDefaultFields()
@@ -64,10 +66,12 @@ namespace CeasarCipherGUI.Forms
 
             // Show the user the custom key input incase they want to use it!
             dtfCustomKeyCheckbox.Visible = true;
-            dtfUsersCustomKey.Visible = true;
 
             // Show the user the continue decrypting button
             dtfContinueDecryptionButton.Visible = true;
+
+            // Show the warning about suggested key not being accurate
+            dtfNoteLabel.Visible = true;
         }
 
         private void DecryptAllText(object sender, EventArgs e)
@@ -91,6 +95,19 @@ namespace CeasarCipherGUI.Forms
 
             // Show the default fields and also reset all values
             ShowDefaultFields();
+        }
+
+        private void UseCustomKey(object sender, EventArgs e)
+        {
+            // If the box is checked show the custom key field otherwise don't
+            if (dtfCustomKeyCheckbox.Checked)
+                dtfUsersCustomKey.Visible = true;
+            else dtfUsersCustomKey.Visible = false;
+        }
+
+        private void GoToHomePage(object sender, EventArgs e)
+        {
+            NavigationHelper.NavigateHome(this);
         }
     }
 }
