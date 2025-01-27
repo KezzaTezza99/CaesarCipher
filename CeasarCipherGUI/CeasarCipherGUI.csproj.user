@@ -4,6 +4,9 @@
     <Compile Update="Forms\CaesarCipherForm.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Forms\DecryptTextForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Forms\EncryptTextForm.cs">
       <SubType>Form</SubType>
     </Compile>

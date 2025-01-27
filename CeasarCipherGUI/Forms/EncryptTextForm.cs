@@ -26,9 +26,25 @@ namespace CeasarCipherGUI
             // Create the cipher object and pass in the plain text and the users key choice
             CaesarCipher caesarCipher = new CaesarCipher(etfPlainTextInput.Text);
             caesarCipher.SetCipherKey((int)etfCipherKey.Value);
-            
+
             // Encrypt the text and display the output in the text area field
             etfEncryptedTextOutput.Text = caesarCipher.EncryptText();
+        }
+
+        private void etfHome_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void GoToHomePage(object sender, EventArgs e)
+        {
+            CaesarCipherForm caesarCipherForm = new CaesarCipherForm();
+
+            // Ensuring that we can exit the application from EncryptFileForm!
+            caesarCipherForm.FormClosed += (s, args) => Application.Exit();
+
+            this.Hide();                                    // Hiding the current form (Encrypt Text Form)
+            caesarCipherForm.Show();                        // Showing the Home Page
         }
     }
 }

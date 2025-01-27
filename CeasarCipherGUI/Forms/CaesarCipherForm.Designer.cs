@@ -46,7 +46,7 @@
             encryptTextButton.TabIndex = 0;
             encryptTextButton.Text = "Encrypt Text";
             encryptTextButton.UseVisualStyleBackColor = true;
-            encryptTextButton.Click += encryptTextButton_Click;
+            encryptTextButton.Click += EncryptTextClicked;
             // 
             // welcomeLabel
             // 
@@ -69,6 +69,7 @@
             decryptTextButton.TabIndex = 2;
             decryptTextButton.Text = "Decrypt Text";
             decryptTextButton.UseVisualStyleBackColor = true;
+            decryptTextButton.Click += DecryptTextClicked;
             // 
             // encryptFileButton
             // 

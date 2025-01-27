@@ -33,6 +33,8 @@
             etfLabel = new Label();
             etfCipherKey = new NumericUpDown();
             etfEncryptButton = new Button();
+            etfExtraInfo = new Label();
+            etfHome = new Button();
             ((System.ComponentModel.ISupportInitialize)etfCipherKey).BeginInit();
             SuspendLayout();
             // 
@@ -46,7 +48,7 @@
             // 
             // etfEncryptedTextOutput
             // 
-            etfEncryptedTextOutput.Location = new Point(12, 231);
+            etfEncryptedTextOutput.Location = new Point(12, 211);
             etfEncryptedTextOutput.Name = "etfEncryptedTextOutput";
             etfEncryptedTextOutput.Size = new Size(776, 173);
             etfEncryptedTextOutput.TabIndex = 2;
@@ -65,27 +67,50 @@
             // 
             // etfCipherKey
             // 
-            etfCipherKey.Location = new Point(668, 149);
+            etfCipherKey.Location = new Point(12, 140);
             etfCipherKey.Name = "etfCipherKey";
             etfCipherKey.Size = new Size(120, 23);
             etfCipherKey.TabIndex = 5;
             // 
             // etfEncryptButton
             // 
-            etfEncryptButton.Location = new Point(668, 178);
+            etfEncryptButton.Location = new Point(12, 169);
             etfEncryptButton.Name = "etfEncryptButton";
-            etfEncryptButton.Size = new Size(120, 47);
+            etfEncryptButton.Size = new Size(120, 36);
             etfEncryptButton.TabIndex = 6;
             etfEncryptButton.Text = "Encrypt!";
             etfEncryptButton.UseVisualStyleBackColor = true;
             etfEncryptButton.Click += EncryptText;
+            // 
+            // etfExtraInfo
+            // 
+            etfExtraInfo.AutoSize = true;
+            etfExtraInfo.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            etfExtraInfo.ForeColor = Color.White;
+            etfExtraInfo.Location = new Point(12, 387);
+            etfExtraInfo.Name = "etfExtraInfo";
+            etfExtraInfo.Size = new Size(602, 21);
+            etfExtraInfo.TabIndex = 7;
+            etfExtraInfo.Text = "You can keep regenerating encrypted text and it'll refresh everytime you click encrypt!";
+            // 
+            // etfHome
+            // 
+            etfHome.Location = new Point(713, 438);
+            etfHome.Name = "etfHome";
+            etfHome.Size = new Size(75, 23);
+            etfHome.TabIndex = 8;
+            etfHome.Text = "Home";
+            etfHome.UseVisualStyleBackColor = true;
+            etfHome.Click += GoToHomePage;
             // 
             // EncryptTextForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ControlText;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(800, 473);
+            Controls.Add(etfHome);
+            Controls.Add(etfExtraInfo);
             Controls.Add(etfEncryptButton);
             Controls.Add(etfCipherKey);
             Controls.Add(etfLabel);
@@ -109,5 +134,7 @@
         private Label etfLabel;
         private NumericUpDown etfCipherKey;
         private Button etfEncryptButton;
+        private Label etfExtraInfo;
+        private Button etfHome;
     }
 }

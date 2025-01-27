@@ -32,3 +32,4 @@ D:\Dev\CaesarCipher\CeasarCipherGUI\obj\Debug\net8.0-windows\CeasarCipherGUI.pdb
 D:\Dev\CaesarCipher\CeasarCipherGUI\obj\Debug\net8.0-windows\CeasarCipherGUI.genruntimeconfig.cache
 D:\Dev\CaesarCipher\CeasarCipherGUI\obj\Debug\net8.0-windows\ref\CeasarCipherGUI.dll
 D:\Dev\CaesarCipher\CeasarCipherGUI\obj\Debug\net8.0-windows\CeasarCipherGUI.EncryptTextForm.resources
+D:\Dev\CaesarCipher\CeasarCipherGUI\obj\Debug\net8.0-windows\CeasarCipherGUI.Forms.DecryptTextForm.resources
