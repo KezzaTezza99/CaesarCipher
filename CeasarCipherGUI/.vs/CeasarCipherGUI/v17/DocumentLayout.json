@@ -3,6 +3,18 @@
   "WorkspaceRootPath": "D:\\Dev\\CaesarCipher\\CeasarCipherGUI\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{FEC5F94A-0C57-4079-891D-604411F2D2E1}|CeasarCipherGUI.csproj|d:\\dev\\caesarcipher\\ceasarciphergui\\utility\\navigationhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FEC5F94A-0C57-4079-891D-604411F2D2E1}|CeasarCipherGUI.csproj|solutionrelative:utility\\navigationhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FEC5F94A-0C57-4079-891D-604411F2D2E1}|CeasarCipherGUI.csproj|d:\\dev\\caesarcipher\\ceasarciphergui\\forms\\caesarcipherform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FEC5F94A-0C57-4079-891D-604411F2D2E1}|CeasarCipherGUI.csproj|solutionrelative:forms\\caesarcipherform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FEC5F94A-0C57-4079-891D-604411F2D2E1}|CeasarCipherGUI.csproj|D:\\Dev\\CaesarCipher\\CeasarCipherGUI\\forms\\decrypttextform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{FEC5F94A-0C57-4079-891D-604411F2D2E1}|CeasarCipherGUI.csproj|solutionrelative:forms\\decrypttextform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{FEC5F94A-0C57-4079-891D-604411F2D2E1}|CeasarCipherGUI.csproj|d:\\dev\\caesarcipher\\ceasarciphergui\\forms\\encrypttextform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FEC5F94A-0C57-4079-891D-604411F2D2E1}|CeasarCipherGUI.csproj|solutionrelative:forms\\encrypttextform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -11,19 +23,7 @@
       "RelativeMoniker": "D:0:0:{FEC5F94A-0C57-4079-891D-604411F2D2E1}|CeasarCipherGUI.csproj|solutionrelative:forms\\decrypttextform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FEC5F94A-0C57-4079-891D-604411F2D2E1}|CeasarCipherGUI.csproj|d:\\dev\\caesarcipher\\ceasarciphergui\\utility\\navigationhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FEC5F94A-0C57-4079-891D-604411F2D2E1}|CeasarCipherGUI.csproj|solutionrelative:utility\\navigationhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FEC5F94A-0C57-4079-891D-604411F2D2E1}|CeasarCipherGUI.csproj|d:\\dev\\caesarcipher\\ceasarciphergui\\forms\\decrypttextform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{FEC5F94A-0C57-4079-891D-604411F2D2E1}|CeasarCipherGUI.csproj|solutionrelative:forms\\decrypttextform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FEC5F94A-0C57-4079-891D-604411F2D2E1}|CeasarCipherGUI.csproj|d:\\dev\\caesarcipher\\ceasarciphergui\\forms\\caesarcipherform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FEC5F94A-0C57-4079-891D-604411F2D2E1}|CeasarCipherGUI.csproj|solutionrelative:forms\\caesarcipherform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FEC5F94A-0C57-4079-891D-604411F2D2E1}|CeasarCipherGUI.csproj|d:\\dev\\caesarcipher\\ceasarciphergui\\forms\\encrypttextform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{FEC5F94A-0C57-4079-891D-604411F2D2E1}|CeasarCipherGUI.csproj|D:\\Dev\\CaesarCipher\\CeasarCipherGUI\\forms\\encrypttextform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{FEC5F94A-0C57-4079-891D-604411F2D2E1}|CeasarCipherGUI.csproj|solutionrelative:forms\\encrypttextform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
@@ -38,37 +38,37 @@
       "DocumentGroups": [
         {
           "DockedWidth": 315,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "NavigationHelper.cs",
               "DocumentMoniker": "D:\\Dev\\CaesarCipher\\CeasarCipherGUI\\Utility\\NavigationHelper.cs",
               "RelativeDocumentMoniker": "Utility\\NavigationHelper.cs",
               "ToolTip": "D:\\Dev\\CaesarCipher\\CeasarCipherGUI\\Utility\\NavigationHelper.cs",
               "RelativeToolTip": "Utility\\NavigationHelper.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAA7AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-27T20:14:38.452Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "CaesarCipherForm.cs",
               "DocumentMoniker": "D:\\Dev\\CaesarCipher\\CeasarCipherGUI\\Forms\\CaesarCipherForm.cs",
               "RelativeDocumentMoniker": "Forms\\CaesarCipherForm.cs",
               "ToolTip": "D:\\Dev\\CaesarCipher\\CeasarCipherGUI\\Forms\\CaesarCipherForm.cs",
               "RelativeToolTip": "Forms\\CaesarCipherForm.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAPAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-27T20:14:02.873Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "DecryptTextForm.cs [Design]",
               "DocumentMoniker": "D:\\Dev\\CaesarCipher\\CeasarCipherGUI\\Forms\\DecryptTextForm.cs",
               "RelativeDocumentMoniker": "Forms\\DecryptTextForm.cs",
@@ -80,7 +80,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "EncryptTextForm.cs",
               "DocumentMoniker": "D:\\Dev\\CaesarCipher\\CeasarCipherGUI\\Forms\\EncryptTextForm.cs",
               "RelativeDocumentMoniker": "Forms\\EncryptTextForm.cs",
@@ -93,7 +93,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "DecryptTextForm.cs",
               "DocumentMoniker": "D:\\Dev\\CaesarCipher\\CeasarCipherGUI\\Forms\\DecryptTextForm.cs",
               "RelativeDocumentMoniker": "Forms\\DecryptTextForm.cs",
@@ -101,8 +101,7 @@
               "RelativeToolTip": "Forms\\DecryptTextForm.cs",
               "ViewState": "AgIAAFgAAAAAAAAAAAAcwHAAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-26T23:16:08.198Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-26T23:16:08.198Z"
             },
             {
               "$type": "Document",
@@ -113,8 +112,7 @@
               "ToolTip": "D:\\Dev\\CaesarCipher\\CeasarCipherGUI\\Forms\\EncryptTextForm.cs [Design]",
               "RelativeToolTip": "Forms\\EncryptTextForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-27T20:07:17.169Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-01-27T20:07:17.169Z"
             },
             {
               "$type": "Document",
@@ -126,8 +124,7 @@
               "RelativeToolTip": "CaesarCipher.cs",
               "ViewState": "AgIAAIkAAAAAAAAAAAAkwLIAAAA8AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-26T23:21:49.613Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-26T23:21:49.613Z"
             }
           ]
         }
